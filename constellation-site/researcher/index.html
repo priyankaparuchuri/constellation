@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Constellation · Researcher tools</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#080c1a">
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bar"><div class="bar-in"><a class="brand" href="/">Constellation</a><span class="status">Researcher tools</span></div></div>
+<main class="app" id="main">
+  <section class="sect">
+    <h2>Compare the two versions</h2>
+    <p class="lede">Load the JSON exports your participants send you. Everything is processed in this browser tab. Nothing is uploaded and nothing is stored. Pilot exports are skipped, and a participant needs at least 5 days under each version to count.</p>
+  </section>
+
+  <section class="sect">
+    <h3>1. Load exports</h3>
+    <div class="dropzone" id="drop"><p>Drop JSON files here, or</p><div class="row" style="justify-content:center;margin-top:10px"><label class="btn" style="cursor:pointer">Choose files<input type="file" id="files" accept=".json,.txt,application/json" multiple hidden></label></div><p class="note" id="filelist" style="margin-top:10px">No files loaded.</p></div>
+    <label class="f">Or paste exports, one JSON object per line<textarea class="codebox" id="paste" placeholder='{"v":1,"pid":"P01",...}'></textarea></label>
+    <div class="row"><button class="btn primary" id="go">Analyse</button><button class="btn" id="demo">Try with synthetic demo data</button><button class="btn link" id="clear">Clear</button></div>
+    <div class="err" id="err" role="alert"></div>
+  </section>
+
+  <section id="out" class="sect" hidden></section>
+</main>
+<footer class="foot">Survey items are short, study-specific questions drawn from self-determination theory and Fogg's behaviour model. They are not a validated scale.</footer>
+<script src="/js/config.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/researcher.js"></script>
+</body>
+</html>

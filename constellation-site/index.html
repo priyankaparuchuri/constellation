@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Constellation · Light one star a day</title>
+<meta name="description" content="A habit tracker that turns your daily check-ins into a night sky. Miss a day and the sky keeps a gap instead of resetting to zero.">
+<meta name="theme-color" content="#080c1a">
+<meta property="og:title" content="Constellation">
+<meta property="og:description" content="Light one star a day. A habit tracker that grows a night sky instead of counting a streak.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/icons/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bar wide-bar"><div class="bar-in">
+  <a class="brand" href="/">Constellation</a>
+  <nav class="navlinks" aria-label="Main"><a href="#how">How it works</a><a href="#study">The study</a><a class="btn primary" href="/app" style="min-height:40px;padding:8px 16px;color:var(--on-star)">Start</a></nav>
+</div></div>
+
+<main id="main" class="wide">
+  <section class="hero">
+    <div class="copy">
+      <p class="eyebrow">A habit tracker that looks like the sky</p>
+      <h1>Light one <em>star</em> a day.</h1>
+      <p>Check in and a star appears, joined to the one before. Miss a day and the sky keeps a quiet gap. Nothing resets to zero.</p>
+      <div class="cta"><a class="btn primary" href="/app">Start tracking</a><a class="btn" href="#how">See how it works</a></div>
+      <p class="note">Free, no account. Works on your phone and can be added to your home screen.</p>
+    </div>
+    <div>
+      <div class="plate sky" id="hero-sky" aria-live="off"></div>
+      <p class="cap">A sample fortnight with three missed days.</p>
+    </div>
+  </section>
+
+  <section class="band" id="how">
+    <h2>One minute a day.</h2>
+    <ol class="steps">
+      <li><b>Step 1</b><h3>Pick a small habit</h3><p>Less phone before bed, a short workout, a glass of water. Something you can do every day.</p></li>
+      <li><b>Step 2</b><h3>Check in once a day</h3><p>One button. You can only check in for today, so the sky stays honest.</p></li>
+      <li><b>Step 3</b><h3>Watch the sky grow</h3><p>Each day lights a star. Every week ends with a larger one. Gaps stay visible, and the next star joins the line.</p></li>
+    </ol>
+  </section>
+
+  <section class="band" id="why">
+    <h2>A gap you can see, not a zero.</h2>
+    <p class="lede">Streak counters turn one missed day into a number that falls back to nothing. A constellation keeps everything you have lit and marks what you missed, so you can see both at once.</p>
+    <div class="compare">
+      <figure><div class="plate" id="cmp-counter"></div><figcaption><strong>A counter</strong> reads 0 the day after a miss, however many days came before.</figcaption></figure>
+      <figure><div class="plate sky" id="cmp-sky"></div><figcaption><strong>A constellation</strong> keeps its stars and shows the gap. Tonight's star is waiting.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="band" id="study">
+    <div class="two">
+      <div class="sect" style="display:flex;flex-direction:column;gap:16px">
+        <h2>Take part in the study.</h2>
+        <p class="lede">This site is part of a design research project that compares the two ways of showing progress. If you were sent here by the researcher, you will use each version for two weeks and tell us how it felt.</p>
+        <div class="cta"><a class="btn primary" href="/app">Join the study</a></div>
+      </div>
+      <ul class="checks">
+        <li>About four weeks in total, one check-in a day.</li>
+        <li>One version for two weeks, then the other.</li>
+        <li>A short survey at the end of each week.</li>
+        <li>Your answers stay in your browser until you send your export.</li>
+        <li>You can stop and delete everything at any time.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="faq">
+    <h2>Questions.</h2>
+    <div class="faq">
+      <details><summary>What if I forget a day?</summary><p>A missed day stays missed and the sky keeps going. You can only check in for today, which keeps the record honest.</p></details>
+      <details><summary>Do I need an account?</summary><p>No. Everything is stored in your browser on your device.</p></details>
+      <details><summary>Can I use it on another device?</summary><p>Your data lives in one browser. In the Data tab you can download a backup and restore it somewhere else.</p></details>
+      <details><summary>Who sees my data?</summary><p>Only you, until you choose to send your export to the researcher. Diary notes are never part of that export.</p></details>
+      <details><summary>Can I just try it?</summary><p>Yes. Choose "Just trying it" when you start. You can switch between both versions and move through days quickly.</p></details>
+    </div>
+  </section>
+
+  <footer class="sitefoot">
+    <span id="foot-who">Constellation, a design research project.</span>
+    <span><a href="/app">Open the app</a> · <a href="/researcher">For researchers</a></span>
+  </footer>
+</main>
+
+<script src="/js/config.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/landing.js"></script>
+</body>
+</html>
